@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Refresh AI - Get 5x More Interviews</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+        body{background:#f8fafc;color:#1e293b}
+        .container{max-width:1200px;margin:auto;padding:20px}
+        header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+        .logo{font-size:24px;font-weight:800;color:#2563eb}
+        .cta{background:#2563eb;color:white;padding:12px 28px;border:none;border-radius:8px;font-weight:600;cursor:pointer}
+        .hero{text-align:center;padding:80px 0}
+        h1{font-size:48px;margin-bottom:20px;color:#1e293b}
+        .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:40px 0}
+        .card{background:white;padding:30px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.1)}
+        .price{font-size:36px;font-weight:800;margin:20px 0}
+        footer{text-align:center;padding:40px 0;color:#64748b}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">ResumeRefresh.ai</div>
+            <button class="cta">Get Started</button>
+        </header>
+        
+        <section class="hero">
+            <h1>Get 5x More Interviews</h1>
+            <p>AI-powered resume optimization to beat applicant tracking systems</p>
+            <button class="cta" style="margin-top:30px">Try Free Analysis</button>
+        </section>
+        
+        <div class="pricing">
+            <div class="card">
+                <h3>Basic Review</h3>
+                <div class="price">$19</div>
+                <ul>
+                    <li>✓ ATS Score</li>
+                    <li>✓ 5 Improvement Tips</li>
+                    <li>✓ Keyword Analysis</li>
+                </ul>
+                <button class="cta" style="width:100%;margin-top:20px">Get Started</button>
+            </div>
+            
+            <div class="card" style="border:2px solid #2563eb">
+                <h3>ATS Optimized</h3>
+                <div class="price">$49</div>
+                <ul>
+                    <li>✓ Full Rewrite</li>
+                    <li>✓ Industry Keywords</li>
+                    <li>✓ 24-48 Hour Delivery</li>
+                </ul>
+                <button class="cta" style="width:100%;margin-top:20px">Get Started</button>
+            </div>
+            
+            <div class="card">
+                <h3>Complete Package</h3>
+                <div class="price">$99</div>
+                <ul>
+                    <li>✓ Resume + Cover Letter</li>
+                    <li>✓ LinkedIn Optimization</li>
+                    <li>✓ Interview Prep Guide</li>
+                </ul>
+                <button class="cta" style="width:100%;margin-top:20px">Get Started</button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 Resume Refresh AI. Start getting more interviews today.</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.querySelectorAll('.cta').forEach(btn => {
+            btn.onclick = () => {
+                const plan = btn.closest('.card') ? btn.closest('.card').querySelector('h3').textContent : 'Free Analysis';
+                alert(`Thank you for choosing ${plan}! You would now be redirected to payment.`);
+            };
+        });
+    </script>
+</body>
+</html>
